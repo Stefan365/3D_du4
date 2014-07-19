@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding="windows-1250"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs">
+    <head>
+        <meta http-equiv="content-type"
+              content="text/html; charset=windows-1250"/>
+        <title>Zpracování HTTP žádosti GET</title>
+    </head>
+    <body>
+        <!-- Formulář pro odeslání dat do servletu metodou get.
+        Servlet se vyvolá při přístupu na URL
+        http://localhost:8084/2A_DU4/get -->
+        <form action = "/DU4/cookie" method = "get">
+            <p>
+                <label>MENO:
+                    <input type="text" value="Default text" name="meno"/><br/>
+                    PRIEZVISKO:
+                    <input type="text" name="priezvisko"/><br/>
+                    ROK NARODENIA:
+                    <input type="number" name="rok"/><br/>
+                    POHLAVIE:
+                    <input type="radio" name="pohlavie" value="MUZ" checked="true"/>muz
+                    <input type="radio" name="pohlavie" value="ZENA"/>zena<br/>
+
+                    <!--odoslanie formularu: -->
+                    <input type="submit" value="Spustit servlet"/>
+                </label>
+            </p>
+        </form>
+    </body>
+</html>

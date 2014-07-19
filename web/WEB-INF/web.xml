@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+		 version="2.4">
+	<display-name>
+		Java v praxi, 3.D
+		Ukázkové příklady.
+	</display-name>
+        <servlet>
+		<!-- Nastavení jména servletu a cesty k java-třídě s implementovaným
+		servletem. -->
+		<servlet-name>hello</servlet-name>
+		<servlet-class>
+			<!-- Plná cesta ke třídě servletu. -->
+			HelloServletPost
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<!-- Nastavení jména servletu a cesty k java-třídě s implementovaným
+		servletem. -->
+		<servlet-name>post</servlet-name>
+		<servlet-class>
+			<!-- Plná cesta ke třídě servletu. -->
+			HelloServletPost
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<!-- Nastavení jména servletu a cesty k java-třídě s implementovaným
+		servletem. -->
+		<servlet-name>cookie</servlet-name>
+		<servlet-class>
+			<!-- Plná cesta ke třídě servletu. -->
+			CookieServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<!-- Nastavení jména servletu a URL vzoru, na němž bude příslušný
+		servlet vyvolán. -->
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+        <servlet-mapping>
+		<!-- Nastavení jména servletu a URL vzoru, na němž bude příslušný
+		servlet vyvolán. -->
+		<servlet-name>post</servlet-name>
+		<url-pattern>/post</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<!-- Nastavení jména servletu a URL vzoru, na němž bude příslušný
+		servlet vyvolán. -->
+		<servlet-name>cookie</servlet-name>
+		<url-pattern>/cookie</url-pattern>
+	</servlet-mapping>
+</web-app>
